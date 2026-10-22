@@ -1,0 +1,20 @@
+{
+  "name": "parkgrid-hardware-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Headless emulation of the ParkGrid Arduino nodes (avr8js) with HC-SR04 / servo / LED / LCD peripheral models, a UART bridge for the gateway, and a WebSocket feed for the dashboard.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "avr8js": "0.21.1",
+    "mqtt": "^5.16.0",
+    "ws": "^8.22.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
